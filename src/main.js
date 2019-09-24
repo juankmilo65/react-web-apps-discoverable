@@ -9,6 +9,17 @@ class main extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <meta
+            name="content"
+            charSet="utf-8"
+            content={content.slice(0, 100)}
+          />
+          <meta name="description" content="testing react helmet" />
+          <meta name="keywords" content="react,seo,helmet" />
+          <title>This is page 1</title>
+          <link rel="google" href="https://www.google.com" />
+        </Helmet>
         <p>
           <Link to="/Inner">Link to page 2</Link>
         </p>
@@ -24,17 +35,6 @@ class main extends Component {
         <p>
           <Link to="/amazon">Amazon</Link>
         </p>
-        <Helmet>
-          <meta
-            name="content"
-            charSet="utf-8"
-            content={content.slice(0, 100)}
-          />
-          <meta name="description" content="testing react helmet" />
-          <meta name="keywords" content="react,seo,helmet" />
-          <title>This is page 1</title>
-          <link rel="google" href="https://www.google.com" />
-        </Helmet>
       </div>
     );
   }
