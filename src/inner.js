@@ -9,6 +9,12 @@ class inner extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <meta
+            name="description"
+            content="This is a different description for this route."
+          />
+        </Helmet>
         <h2>This is page2</h2>
         <article>{content}</article>
         <p>
@@ -20,15 +26,6 @@ class inner extends Component {
         <p>
           <Link to="/twitter">Twitter</Link>
         </p>
-        <Helmet>
-          <meta
-            name="content"
-            charSet="utf-8"
-            content={content.slice(0, 100)}
-          />
-          <title>This is page 2</title>
-          <link rel="google" href="https://www.facebook.com/" />
-        </Helmet>
       </div>
     );
   }

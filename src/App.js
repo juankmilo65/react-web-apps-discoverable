@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import main from "./main";
 import inner from "./inner";
 
@@ -7,6 +8,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Helmet>
+          <title>This is page 2</title>
+          <meta charSet="utf-8" />
+          <meta name="description" content="A React.js application JuanK" />
+          <link rel="google" href="https://www.facebook.com/" />
+        </Helmet>
         <Switch>
           <Route exact path="/" component={main} />
           <Route exact path="/Inner" component={inner} />
