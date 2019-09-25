@@ -20,6 +20,11 @@ class inner extends Component {
         <p>
           <Link to="/twitter">Twitter</Link>
         </p>
+        <Helmet>
+          <meta name="keywords" content="This,is,page2" />
+          <title>This is page 2</title>
+          <link rel="google" href="https://www.facebook.com/" />
+        </Helmet>
       </div>
     );
   }

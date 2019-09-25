@@ -9,12 +9,6 @@ class main extends Component {
   render() {
     return (
       <div>
-        <Helmet>
-          <meta
-            name="description"
-            content="This is a different description for this route."
-          />
-        </Helmet>
         <p>
           <Link to="/Inner">Link to page 2</Link>
         </p>
@@ -30,6 +24,13 @@ class main extends Component {
         <p>
           <Link to="/amazon">Amazon</Link>
         </p>
+        <Helmet>
+          <meta
+            name="keywords"
+            content="Amid,AOC,pressure,Pelosi,suggests,impeachment,back,on,the,table,to,address,grave,new,chapter,of,lawlessness"
+          />
+          <link rel="google" href="https://www.google.com" />
+        </Helmet>
       </div>
     );
   }
