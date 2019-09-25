@@ -9,12 +9,6 @@ class main extends Component {
   render() {
     return (
       <div>
-        <p>
-          <Link to="/Inner">Link to page 2</Link>
-        </p>
-
-        <h1>This is page1</h1>
-
         <article>{content}</article>
         <h2>
           <p>

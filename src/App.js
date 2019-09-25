@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import main from "./main";
 import inner from "./inner";
 
@@ -15,6 +16,10 @@ function App() {
             content="This is what you want to show as the page content in the Google SERP Listing"
           />
         </Helmet>
+        <h1>This is page1</h1>
+        <p>
+          <Link to="/Inner">Link to page 2</Link>
+        </p>
         <Switch>
           <Route exact path="/" component={main} />
           <Route exact path="/Inner" component={inner} />
