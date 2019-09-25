@@ -9,7 +9,7 @@ class inner extends Component {
   render() {
     return (
       <div>
-        <h2>This is page2</h2>
+        <h1>This is page 2</h1>
         <article>{content}</article>
         <p>
           <Link to="/facebook">Facebook</Link>

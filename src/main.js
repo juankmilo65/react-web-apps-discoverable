@@ -13,17 +13,24 @@ class main extends Component {
           <Link to="/Inner">Link to page 2</Link>
         </p>
 
-        <h2>This is page1</h2>
+        <h1>This is page1</h1>
+
         <article>{content}</article>
-        <p>
-          <Link to="/google">Google</Link>
-        </p>
-        <p>
-          <Link to="/yahoo">Yahoo</Link>
-        </p>
-        <p>
-          <Link to="/amazon">Amazon</Link>
-        </p>
+        <h2>
+          <p>
+            <Link to="/google">Google</Link>
+          </p>{" "}
+        </h2>
+        <h2>
+          <p>
+            <Link to="/yahoo">Yahoo</Link>
+          </p>{" "}
+        </h2>
+        <h2>
+          <p>
+            <Link to="/amazon">Amazon</Link>
+          </p>{" "}
+        </h2>
         <Helmet>
           <meta
             name="keywords"
