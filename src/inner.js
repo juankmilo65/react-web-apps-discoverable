@@ -9,12 +9,6 @@ class inner extends Component {
   render() {
     return (
       <div>
-        <Helmet>
-          <meta
-            name="description"
-            content="This is a different description for this route."
-          />
-        </Helmet>
         <h2>This is page2</h2>
         <article>{content}</article>
         <p>

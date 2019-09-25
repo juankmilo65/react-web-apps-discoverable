@@ -9,10 +9,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Helmet>
-          <title>This is page 2</title>
-          <meta charSet="utf-8" />
-          <meta name="description" content="A React.js application JuanK" />
-          <link rel="google" href="https://www.facebook.com/" />
+          <title>Here's the Title!</title>
+          <meta
+            name="description"
+            content="This is what you want to show as the page content in the Google SERP Listing"
+          />
         </Helmet>
         <Switch>
           <Route exact path="/" component={main} />
